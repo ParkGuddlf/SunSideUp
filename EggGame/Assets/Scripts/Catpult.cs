@@ -17,7 +17,7 @@ public class Catpult : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (EulerToQuternion() >= -10 && Input.touchCount <= 0)
+        if (EulerToQuternion() >= -5 && Input.touchCount <= 0)
         {
             rotationSpeed = -40;
         }

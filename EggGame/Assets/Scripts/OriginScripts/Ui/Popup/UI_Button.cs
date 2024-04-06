@@ -6,7 +6,7 @@ using System;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class UI_Button : UI_Popup
+public class UI_Button : UI_Popup,IPointerEnterHandler
 {
     enum Buttons
     {
@@ -15,8 +15,7 @@ public class UI_Button : UI_Popup
 
     enum Texts
     {
-        PointText,
-        ScoreText
+        PointText,        
     }
 
     enum GameObjects
@@ -44,16 +43,20 @@ public class UI_Button : UI_Popup
         BindEvent(go, (PointerEventData data) => { go.transform.position = data.position; }, Define.UIEvent.Drag);
     }
 
-    int _score = 0;
 
     public void OnButtonClicked(PointerEventData data)
     {
-        _score++;
-        GetTMP((int)Texts.ScoreText).text = $"Á¡¼ö: {_score}";
+
     }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        
+    }
+    
     public void Close()
     {
         ClosePopupUI();   
     }
+
 }

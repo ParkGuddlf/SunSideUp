@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 72275095863250177}
   - component: {fileID: 72275095863250176}
   - component: {fileID: 72275095863250179}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bone_5
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,7 +50,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!50 &72275095863250176
 Rigidbody2D:
   serializedVersion: 4
@@ -65,9 +65,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 3
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4ecef7f29321b6143892e5cb61746de1, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -87,7 +87,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.3940789, y: -0.0028017608}
+  m_ConnectedAnchor: {x: -0.3940788, y: -0.0028017694}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -108,9 +108,9 @@ GameObject:
   - component: {fileID: 72275095885293303}
   - component: {fileID: 72275095885293302}
   - component: {fileID: 72275095885293297}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bone_7
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,7 +146,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!50 &72275095885293302
 Rigidbody2D:
   serializedVersion: 4
@@ -161,9 +161,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 3
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4ecef7f29321b6143892e5cb61746de1, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -183,7 +183,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.3893757, y: -0.013587652}
+  m_ConnectedAnchor: {x: -0.38937566, y: -0.013588706}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -204,9 +204,9 @@ GameObject:
   - component: {fileID: 72275096051686241}
   - component: {fileID: 72275096051686240}
   - component: {fileID: 72275096051686243}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bone_6
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,7 +242,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!50 &72275096051686240
 Rigidbody2D:
   serializedVersion: 4
@@ -257,9 +257,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 3
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4ecef7f29321b6143892e5cb61746de1, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -279,7 +279,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.29968208, y: 0.015843121}
+  m_ConnectedAnchor: {x: -0.2996822, y: 0.015843859}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -300,9 +300,9 @@ GameObject:
   - component: {fileID: 72275096173315790}
   - component: {fileID: 72275096173315785}
   - component: {fileID: 72275096173315784}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bone_1
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,7 +314,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72275096173315786}
-  m_LocalRotation: {x: 0, y: 0, z: -0.022709671, w: 0.9997421}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.6789215, y: 0.08058815, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -338,7 +338,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!50 &72275096173315785
 Rigidbody2D:
   serializedVersion: 4
@@ -353,9 +353,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 3
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4ecef7f29321b6143892e5cb61746de1, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -375,7 +375,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.2954905, y: 0.0134320855}
+  m_ConnectedAnchor: {x: -0.29548985, y: 0.013431736}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -396,9 +396,9 @@ GameObject:
   - component: {fileID: 72275096256740130}
   - component: {fileID: 72275096256740157}
   - component: {fileID: 72275096256740156}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bone_4
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -434,7 +434,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!50 &72275096256740157
 Rigidbody2D:
   serializedVersion: 4
@@ -449,9 +449,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 5
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4ecef7f29321b6143892e5cb61746de1, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -471,7 +471,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.41657054, y: 0.003970847}
+  m_ConnectedAnchor: {x: -0.4165703, y: 0.0039703436}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -492,9 +492,9 @@ GameObject:
   - component: {fileID: 72275096396418687}
   - component: {fileID: 72275096396418686}
   - component: {fileID: 72275096396418681}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bone_8
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -530,7 +530,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!50 &72275096396418686
 Rigidbody2D:
   serializedVersion: 4
@@ -545,9 +545,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 3
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4ecef7f29321b6143892e5cb61746de1, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -567,7 +567,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.37563708, y: 0.018743483}
+  m_ConnectedAnchor: {x: -0.37563777, y: 0.018743737}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 72275096949666791}
   - component: {fileID: 2980239769548350850}
   m_Layer: 0
-  m_Name: egg1 1
+  m_Name: Egg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -687,8 +687,8 @@ MonoBehaviour:
   - {fileID: 72275096396418680}
   - {fileID: 72275097066161491}
   m_Bounds:
-    m_Center: {x: -0.06499994, y: 0.050159976, z: 0}
-    m_Extent: {x: 1.6899999, y: 0.26569998, z: 0}
+    m_Center: {x: -0.06637001, y: 0.107391864, z: 0}
+    m_Extent: {x: 1.6867297, y: 0.27248338, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -716,9 +716,9 @@ GameObject:
   - component: {fileID: 72275097066161491}
   - component: {fileID: 72275097066161489}
   - component: {fileID: 72275097066161488}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bone_9
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -753,7 +753,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!50 &72275097066161488
 Rigidbody2D:
   serializedVersion: 4
@@ -768,9 +768,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 3
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4ecef7f29321b6143892e5cb61746de1, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -787,9 +787,9 @@ GameObject:
   - component: {fileID: 72275097399967639}
   - component: {fileID: 72275097399967638}
   - component: {fileID: 72275097399967633}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bone_3
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -825,7 +825,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!50 &72275097399967638
 Rigidbody2D:
   serializedVersion: 4
@@ -840,9 +840,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 5
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4ecef7f29321b6143892e5cb61746de1, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -862,7 +862,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.34470373, y: -0.0066411197}
+  m_ConnectedAnchor: {x: -0.34470403, y: -0.0066409637}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -883,9 +883,9 @@ GameObject:
   - component: {fileID: 72275097588587626}
   - component: {fileID: 72275097588587621}
   - component: {fileID: 72275097588587620}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bone_2
-  m_TagString: Untagged
+  m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -921,7 +921,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.2
 --- !u!50 &72275097588587621
 Rigidbody2D:
   serializedVersion: 4
@@ -936,9 +936,9 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 3
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4ecef7f29321b6143892e5cb61746de1, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -958,7 +958,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.35813943, y: -0.004652232}
+  m_ConnectedAnchor: {x: -0.35813975, y: -0.0046515595}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
