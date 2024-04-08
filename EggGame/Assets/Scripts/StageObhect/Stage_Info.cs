@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class Stage_Info : MonoBehaviour
 {
     [SerializeField]
-    StageObjectInfo stageObjectInfo;
+    public StageObjectInfo stageObjectInfo;
 
     [SerializeField]
     SpriteRenderer SpriteRenderer;
@@ -22,6 +22,7 @@ public abstract class Stage_Info : MonoBehaviour
             }
 
             isClear = true;
+            Managers.Resource.Instantiate("ClearCanvas",null,1);
             Debug.Log("¼º°ø");
         }
     }

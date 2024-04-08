@@ -13,6 +13,8 @@ public class Scripte_Stageobject : Stage_Info
     private void Start()
     {
         rigi2D = GetComponent<Rigidbody2D>();
+
+        MainCanvas.Instance.stageInfoText.text = stageObjectInfo.stageinfoText;
     }
 
     private void FixedUpdate()
@@ -22,7 +24,7 @@ public class Scripte_Stageobject : Stage_Info
             rigi2D.constraints = RigidbodyConstraints2D.FreezeAll;
         }
     }
-    GameObject adsasd;
+    public GameObject adsasd;
     private void Update()
     {
         if (HasCollidedForThreshold())
@@ -32,6 +34,11 @@ public class Scripte_Stageobject : Stage_Info
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
     {
         // 다른 Collider와 접촉했을 때
         if (collision.gameObject.layer == LayerMask.NameToLayer("Egg"))

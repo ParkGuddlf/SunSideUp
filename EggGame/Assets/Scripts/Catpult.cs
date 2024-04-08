@@ -15,22 +15,10 @@ public class Catpult : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate()
-    {
-        if (EulerToQuternion() >= -5 && Input.touchCount <= 0)
-        {
-            rotationSpeed = -40;
-        }
-        else if(EulerToQuternion() <= -10 && Input.touchCount <= 0)
-        {
-            rotationSpeed = 0;
-        }
-
-        rb.angularVelocity = rotationSpeed;
-    }
-
     private void Update()
     {
+        if (!GameManager.Instance.isStart)
+            return;
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -38,7 +26,7 @@ public class Catpult : MonoBehaviour
             {
                 if (EulerToQuternion() <= 1)
                 {
-                    rotationSpeed = 150;
+                    rotationSpeed = 180;
                 }
                 else
                 {
@@ -46,28 +34,17 @@ public class Catpult : MonoBehaviour
                 }
             }
         }
-            /* if (Input.touchCount > 0)
-             {
-                 Touch touch = Input.GetTouch(0);
-                 if (touch.phase == TouchPhase.Stationary)
-                 {
-                     if (EulerToQuternion() >= -20)
-                     {
-                         rotationSpeed = -20;
-                     }
-                     else
-                     {
-                         rotationSpeed = 0;
-                     }
-                 }
-                 if (touch.phase == TouchPhase.Ended)
-                 {
-                     {
-                         rotationSpeed = -20;
-                     }
-                 }
-             }*/
+        if (EulerToQuternion() >= -10 && Input.touchCount <= 0)
+        {
+            rotationSpeed = -40;
         }
+        else if (EulerToQuternion() <= -10 && Input.touchCount <= 0)
+        {
+            rotationSpeed = 0;
+        }
+
+        rb.angularVelocity = rotationSpeed;
+    }
 
     int EulerToQuternion()
     {
