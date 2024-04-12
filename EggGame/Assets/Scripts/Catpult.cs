@@ -8,13 +8,19 @@ public class Catpult : MonoBehaviour
 {
     public float rotationSpeed; // 회전 속도
 
-    private Rigidbody2D rb;
+    private Rigidbody2D rigi2D;
+    private AudioSource audioSource;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigi2D = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
+    private void FixedUpdate()
+    {
+        rigi2D.angularVelocity = rotationSpeed;
+    }
     private void Update()
     {
         if (!GameManager.Instance.isStart)
@@ -26,7 +32,7 @@ public class Catpult : MonoBehaviour
             {
                 if (EulerToQuternion() <= 1)
                 {
-                    rotationSpeed = 180;
+                    rotationSpeed = 150;
                 }
                 else
                 {
@@ -43,7 +49,21 @@ public class Catpult : MonoBehaviour
             rotationSpeed = 0;
         }
 
-        rb.angularVelocity = rotationSpeed;
+    }
+    [SerializeField]
+    int count;
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(count == 0)
+            audioSource.Play();
+        count++;
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        count--;
+        if(count == 0)
+            audioSource.Stop();
     }
 
     int EulerToQuternion()

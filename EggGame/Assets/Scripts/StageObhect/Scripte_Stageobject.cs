@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Scripte_Stageobject : Stage_Info
@@ -9,10 +10,16 @@ public class Scripte_Stageobject : Stage_Info
     private bool isColliding;
     [SerializeField]
     private float collisionTime = 0f; // 경과 시간
+    [SerializeField]
+    private AudioSource audioSource;
+    [SerializeField]
+    bool issound;
 
+    public GameObject currentEgg;
     private void Start()
     {
         rigi2D = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
 
         MainCanvas.Instance.stageInfoText.text = stageObjectInfo.stageinfoText;
     }
@@ -24,18 +31,18 @@ public class Scripte_Stageobject : Stage_Info
             rigi2D.constraints = RigidbodyConstraints2D.FreezeAll;
         }
     }
-    public GameObject adsasd;
     private void Update()
     {
         if (HasCollidedForThreshold())
         {
-            CHECK_SUCCESS(adsasd);
+            CHECK_SUCCESS(currentEgg);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
+        if (!issound)
+            StartCoroutine(HitSoundCo());
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -45,7 +52,7 @@ public class Scripte_Stageobject : Stage_Info
         {
             isColliding = true; // 접촉 상태로 설정
             collisionTime = Time.time; // 접촉 시작 시간 기록
-            adsasd = collision.gameObject;
+            currentEgg = collision.gameObject;
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -55,7 +62,7 @@ public class Scripte_Stageobject : Stage_Info
         {
             isColliding = false; // 접촉 종료 상태로 설정
             collisionTime = 0f; // 접촉 시간 초기화
-            adsasd = null;
+            currentEgg = null;
         }
     }
     bool HasCollidedForThreshold()
@@ -64,4 +71,13 @@ public class Scripte_Stageobject : Stage_Info
         return isColliding && (Time.time - collisionTime) >= 3;
     }
 
+    IEnumerator HitSoundCo()
+    {        
+        issound = true;
+        AudioClip asd = Managers.Resource.Load<AudioClip>($"Sounds/thump{3}");
+        audioSource.clip = asd;
+        audioSource.Play();
+        yield return new WaitForSeconds(0.5f);
+        issound = false;
+    }
 }
