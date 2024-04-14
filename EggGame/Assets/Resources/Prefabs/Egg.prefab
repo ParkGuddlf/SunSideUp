@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 72275095863250177}
   - component: {fileID: 72275095863250176}
   - component: {fileID: 72275095863250179}
-  m_Layer: 7
+  - component: {fileID: 4686560652306724182}
+  m_Layer: 0
   m_Name: bone_5
   m_TagString: Egg
   m_Icon: {fileID: 0}
@@ -87,15 +88,34 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.3940788, y: -0.0028017694}
+  m_ConnectedAnchor: {x: -0.3940786, y: -0.002801567}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -15
-    m_UpperAngle: 15
+    m_LowerAngle: -10
+    m_UpperAngle: 10
+--- !u!232 &4686560652306724182
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72275095863250205}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 72275096051686240}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.39408895
+  m_MaxDistanceOnly: 1
 --- !u!1 &72275095885293299
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +128,7 @@ GameObject:
   - component: {fileID: 72275095885293303}
   - component: {fileID: 72275095885293302}
   - component: {fileID: 72275095885293297}
+  - component: {fileID: 101165320624657965}
   m_Layer: 7
   m_Name: bone_7
   m_TagString: Egg
@@ -183,15 +204,34 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.38937563, y: -0.013588229}
+  m_ConnectedAnchor: {x: -0.38937545, y: -0.013587935}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -15
-    m_UpperAngle: 15
+    m_LowerAngle: -10
+    m_UpperAngle: 10
+--- !u!232 &101165320624657965
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72275095885293299}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 72275096396418686}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.38961253
+  m_MaxDistanceOnly: 1
 --- !u!1 &72275096051686269
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +244,7 @@ GameObject:
   - component: {fileID: 72275096051686241}
   - component: {fileID: 72275096051686240}
   - component: {fileID: 72275096051686243}
+  - component: {fileID: 7915766819362491376}
   m_Layer: 7
   m_Name: bone_6
   m_TagString: Egg
@@ -279,15 +320,34 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.29968247, y: 0.015843397}
+  m_ConnectedAnchor: {x: -0.29968292, y: 0.01584312}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -15
-    m_UpperAngle: 15
+    m_LowerAngle: -10
+    m_UpperAngle: 10
+--- !u!232 &7915766819362491376
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72275096051686269}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 72275095885293302}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.30010077
+  m_MaxDistanceOnly: 1
 --- !u!1 &72275096173315786
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +360,7 @@ GameObject:
   - component: {fileID: 72275096173315790}
   - component: {fileID: 72275096173315785}
   - component: {fileID: 72275096173315784}
+  - component: {fileID: 6308510718760804241}
   m_Layer: 7
   m_Name: bone_1
   m_TagString: Egg
@@ -375,15 +436,34 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.29548985, y: 0.013431736}
+  m_ConnectedAnchor: {x: -0.29549018, y: 0.013431771}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -15
-    m_UpperAngle: 15
+    m_LowerAngle: 0
+    m_UpperAngle: 0
+--- !u!232 &6308510718760804241
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72275096173315786}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 72275097588587621}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.29579535
+  m_MaxDistanceOnly: 1
 --- !u!1 &72275096256740158
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +476,7 @@ GameObject:
   - component: {fileID: 72275096256740130}
   - component: {fileID: 72275096256740157}
   - component: {fileID: 72275096256740156}
+  - component: {fileID: 6552892055536602830}
   m_Layer: 7
   m_Name: bone_4
   m_TagString: Egg
@@ -471,15 +552,34 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.4165703, y: 0.0039703436}
+  m_ConnectedAnchor: {x: -0.4165702, y: 0.003970474}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -15
-    m_UpperAngle: 15
+    m_LowerAngle: -10
+    m_UpperAngle: 10
+--- !u!232 &6552892055536602830
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72275096256740158}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 72275095863250176}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.4165891
+  m_MaxDistanceOnly: 1
 --- !u!1 &72275096396418683
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +592,8 @@ GameObject:
   - component: {fileID: 72275096396418687}
   - component: {fileID: 72275096396418686}
   - component: {fileID: 72275096396418681}
-  m_Layer: 7
+  - component: {fileID: 689101943290058521}
+  m_Layer: 0
   m_Name: bone_8
   m_TagString: Egg
   m_Icon: {fileID: 0}
@@ -567,15 +668,34 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.3756375, y: 0.018744193}
+  m_ConnectedAnchor: {x: -0.37563765, y: 0.018743992}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -15
-    m_UpperAngle: 15
+    m_LowerAngle: -10
+    m_UpperAngle: 10
+--- !u!232 &689101943290058521
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72275096396418683}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 72275097066161488}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.37610534
+  m_MaxDistanceOnly: 1
 --- !u!1 &72275096949666790
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +708,7 @@ GameObject:
   - component: {fileID: 72275096949666788}
   - component: {fileID: 72275096949666791}
   - component: {fileID: 2980239769548350850}
+  - component: {fileID: -5269662243009932059}
   m_Layer: 7
   m_Name: Egg
   m_TagString: Untagged
@@ -603,7 +724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72275096949666790}
   m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: -6, y: 3, z: 0}
+  m_LocalPosition: {x: -10, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -687,8 +808,8 @@ MonoBehaviour:
   - {fileID: 72275096396418680}
   - {fileID: 72275097066161491}
   m_Bounds:
-    m_Center: {x: -0.06637001, y: 0.10739234, z: 0}
-    m_Extent: {x: 1.6867294, y: 0.27248338, z: 0}
+    m_Center: {x: -0.06637001, y: 0.10739185, z: 0}
+    m_Extent: {x: 1.68673, y: 0.27248344, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -706,6 +827,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody2: {fileID: 72275096173315785}
   eggCenterTr: {fileID: 72275096256740159}
+--- !u!50 &-5269662243009932059
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72275096949666790}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 6
 --- !u!1 &72275097066161490
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,6 +930,7 @@ GameObject:
   - component: {fileID: 72275097399967639}
   - component: {fileID: 72275097399967638}
   - component: {fileID: 72275097399967633}
+  - component: {fileID: 1102085590831165221}
   m_Layer: 7
   m_Name: bone_3
   m_TagString: Egg
@@ -863,15 +1006,34 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.3447038, y: -0.0066409665}
+  m_ConnectedAnchor: {x: -0.34470397, y: -0.0066414773}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -15
-    m_UpperAngle: 15
+    m_LowerAngle: -10
+    m_UpperAngle: 10
+--- !u!232 &1102085590831165221
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72275097399967635}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 72275096256740157}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.34476757
+  m_MaxDistanceOnly: 1
 --- !u!1 &72275097588587622
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +1046,8 @@ GameObject:
   - component: {fileID: 72275097588587626}
   - component: {fileID: 72275097588587621}
   - component: {fileID: 72275097588587620}
-  m_Layer: 7
+  - component: {fileID: 1889047434669759248}
+  m_Layer: 0
   m_Name: bone_2
   m_TagString: Egg
   m_Icon: {fileID: 0}
@@ -959,12 +1122,31 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.35813975, y: -0.0046515595}
+  m_ConnectedAnchor: {x: -0.35813954, y: -0.0046517258}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: -15
-    m_UpperAngle: 15
+    m_LowerAngle: -10
+    m_UpperAngle: 10
+--- !u!232 &1889047434669759248
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72275097588587622}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 72275097399967638}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 0
+  m_Distance: 0.35816973
+  m_MaxDistanceOnly: 1

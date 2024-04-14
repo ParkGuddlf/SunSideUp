@@ -74,7 +74,7 @@ public class Scripte_Stageobject : Stage_Info
     IEnumerator HitSoundCo()
     {        
         issound = true;
-        AudioClip asd = Managers.Resource.Load<AudioClip>($"Sounds/thump{3}");
+        AudioClip asd = Managers.Resource.Load<AudioClip>($"Sounds/thump{5}");
         audioSource.clip = asd;
         audioSource.Play();
         yield return new WaitForSeconds(0.5f);
